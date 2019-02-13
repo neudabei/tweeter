@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../twitter_client'
+require_relative '../lib/twitter_client'
 
 RSpec.describe TwitterClient do
   describe '#send_tweets' do

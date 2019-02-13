@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../tweet_formatter'
+require_relative '../lib/tweet_formatter'
 
 RSpec.describe TweetFormatter do
   describe '#tweets' do

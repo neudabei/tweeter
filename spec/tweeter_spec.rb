@@ -1,5 +1,5 @@
 require 'spec_helper'
-require_relative '../tweeter'
+require_relative '../lib/tweeter'
 
 RSpec.describe Tweeter do
   subject { described_class.new }
