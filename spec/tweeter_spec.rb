@@ -33,5 +33,25 @@ RSpec.describe Tweeter do
       expect(twitter_client).to receive(:send_tweets).and_return('ok')
       subject.tweet
     end
+
+    describe 'validating input' do
+      context 'when no input is provided' do
+        let(:my_short_tweet) { '' }
+
+        it 'aborts and prints an error message' do
+          expect(subject).to receive(:abort).with('No input provided. Try echo -n `"My tweet" | ruby main.rb`')
+          subject.tweet
+        end
+      end
+
+      context 'when only a new line is provided' do
+        let(:my_short_tweet) { "\n" }
+
+        it 'aborts and prints an error message' do
+          expect(subject).to receive(:abort).with('No input provided. Try echo -n `"My tweet" | ruby main.rb`')
+          subject.tweet
+        end
+      end
+    end
   end
 end

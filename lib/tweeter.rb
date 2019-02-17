@@ -5,7 +5,7 @@ require_relative 'tweet_formatter'
 
 class Tweeter
   def initialize
-    @input = ARGF.read
+    validate_input
   end
 
   def tweet
@@ -18,4 +18,11 @@ class Tweeter
   private
 
   attr_reader :input
+
+  def validate_input
+    @input = ARGF.read
+    if @input.chomp == ''
+      abort 'No input provided. Try echo -n `"My tweet" | ruby main.rb`'
+    end
+  end
 end
