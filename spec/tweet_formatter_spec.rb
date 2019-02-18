@@ -29,15 +29,21 @@ RSpec.describe TweetFormatter do
         tweet_one = %w[
           1) This is a long tweet that spans more than 280 characters. It can only be tweeted if willing
           to send several connected tweets. Let's hope this works. This is a long tweet that spans more
-          than 280 characters. It can only be tweeted if willing to send several connected tweets. Let's
+          than 280 characters. It can only be tweeted if willing to send several connected tweets.
         ].join(' ')
 
         tweet_two = %w[
-          2) hope this works. This is a long tweet that spans more than 280 characters. It can only be
+          2) Let's hope this works. This is a long tweet that spans more than 280 characters. It can only be
           tweeted if willing to send several connected tweets. Let's hope this works.
         ].join(' ')
 
         expect(subject.tweets).to eq([tweet_one, tweet_two])
+      end
+
+      it 'no tweet in the array is longer than 280 characters' do
+        subject.tweets.each do |tweet|
+          expect(tweet.length <= 280).to eq(true)
+        end
       end
 
       it 'contains tweets that are enumerated' do
