@@ -9,7 +9,7 @@
 * Make the script executable to not have to run it with ruby explicitly: `$ chmod 755 main.rb`
 * Create your .env file with your Twitter API keys
   * `$ cp .env_copy .env`
-  * You can get Twitter API keys here:[https://developer.twitter.com](https://developer.twitter.com/)
+  * You can get Twitter API keys here: [https://developer.twitter.com](https://developer.twitter.com/)
 * Add the script to your path if you want to call it from anywhere on your system.
 
 ### Use
