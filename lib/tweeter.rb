@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require_relative 'twitter_client'
 require_relative 'tweet_formatter'
 
