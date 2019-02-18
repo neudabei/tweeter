@@ -4,11 +4,14 @@ GEM
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     buftok (0.2.0)
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
     diff-lcs (1.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.6.0)
     equalizer (0.0.11)
+    hashdiff (0.3.8)
     http (3.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -36,6 +39,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    safe_yaml (1.0.4)
     simple_oauth (0.3.1)
     thread_safe (0.3.6)
     twitter (6.2.0)
@@ -52,6 +56,10 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
+    webmock (3.5.1)
+      addressable (>= 2.3.6)
+      crack (>= 0.3.2)
+      hashdiff
 
 PLATFORMS
   ruby
@@ -60,6 +68,7 @@ DEPENDENCIES
   dotenv
   rspec
   twitter (~> 6.2.0)
+  webmock
 
 BUNDLED WITH
    1.17.1
