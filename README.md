@@ -2,6 +2,8 @@
 
 ### Read from $STDIN and send to twitter as tweet or tweets in a thread
 
+![tweeter](tweeter.png)
+
 ### Install
 
 * Make sure you have Ruby installed. Version 2.5 or higher.
