@@ -18,8 +18,8 @@ The scripts reads from $STDIN and then processes the input to either send one in
 There are different ways to pipe input into the script. It's possible to `$ echo` something directly from the command line. 
 Also a file can be printed out and then piped into the script. Thanks to Ruby's `ARGF` it's also possible to pass the filename as a command line argument:
 
-  * ./main.rb text.md
-  * cat text.md | ./main.rb
-  * echo "hello twitter" | ./main.rb
+  * `./main.rb text.md`
+  * `cat text.md | ./main.rb`
+  * `echo "hello twitter" | ./main.rb`
 
 
